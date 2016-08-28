@@ -16,3 +16,8 @@ pages:
 - Sobre: sobre.md
 
 theme: material
+
+extra:
+  palette:
+    primary: 'teal'
+    accent: 'grey'
