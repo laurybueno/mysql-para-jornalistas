@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: MySQL para Jornalistas
+
+pages:
+- Home: index.md
+
+- Sobre: sobre.md
+
+theme: flatly
