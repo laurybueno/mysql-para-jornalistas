@@ -2,22 +2,17 @@ site_name: MySQL para Jornalistas
 
 pages:
 - Home: index.md
-- Por quê?:
-  - Isto importa?: por_que/isto_importa.md
-  - Com quem estamos lidando?: por_que/com_quem_estamos_lidando.md
+- Por quê isto importa?: por_que/isto_importa.md
 - Tutoriais:
-  - Onde estamos pisando: tutoriais/onde_estamos.md
-  - Prepare suas ferramentas: tutoriais/prepare_suas_ferramentas.md
-  - Xampp: tutoriais/xampp.md
-  - HeidiSQL: tutoriais/heidisql.md
+  - Introdução: tutoriais/introducao.md
+  - Ferramentas: tutoriais/ferramentas.md
   - Um pouco sobre MySQL: tutoriais/mysql.md
 - Entrevista com dados:
-  - Como perguntar: entrevista_com_dados/como_perguntar.md
+  - Baixe os dados que vamos usar: entrevista_com_dados/como_perguntar.md
   - CSV: entrevista_com_dados/csv.md
   - CSV para MySQL: entrevista_com_dados/csv-mysql.md
-  - Hora das perguntas: entrevista_com_dados/perguntas.md
+  - Como falar SQL: entrevista_com_dados/perguntas.md
 - Resumo: resumo.md
-
 - Sobre: sobre.md
 
 theme: flatly

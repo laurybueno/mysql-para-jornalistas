@@ -1,4 +1,4 @@
-# Entre nos dados
+# Hora da entrevista
 
 Você nem sempre saberá o que está procurando. Nem sempre terá um objetivo definido. Muitas vezes você se colocará diante de uma grande quantidade de informações e não saberá o que procurar nelas. Vamos passar por um caso assim agora para tentar treinar a paixão por bancos de dados. Devemos insistentemente fazer perguntas a essas informações tentando encontrar padrões relevantes na perspectiva do jornalismo, elementos que possam formar uma matéria, seja uma pequena nota, ou uma manchete.
 
@@ -196,8 +196,17 @@ Como estamos fazendo cruzamentos com tabelas muito grandes, é uma boa ideia lim
 
 Veja como fica a query completa. Seja paciente, pois dependendo da máquina em que você estiver trabalhando, o resultado pode demorar mais de um minuto para ser processado pelo banco. Lembre-se que estamos pedindo para nosso servidor que compare duas tabelas muito grandes. Se você ainda não escolheu os índices das tabelas, agora isso vai fazer diferença no desempenho da ferramenta.
 
+*Daqui em diante, as SQLs serão exibidas com identações. Esse é apenas um recurso estpetico para facilitar a leitura dos comandos e não tem qualquer influência sobre os resultados obtidos do banco.*
+
 ```sql
-SELECT candidatos.*, tb_eleicoes_10_dados.votos FROM tb_eleicoes_10_dados RIGHT JOIN candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id  WHERE candidatos.ano = '2010' and tb_eleicoes_10_dados.votos != 'NULL' LIMIT 100
+SELECT candidatos.*, tb_eleicoes_10_dados.votos
+    FROM tb_eleicoes_10_dados
+    RIGHT JOIN
+      candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id  
+    WHERE
+      candidatos.ano = '2010'
+      and tb_eleicoes_10_dados.votos != 'NULL'
+    LIMIT 100
 ```
 
 Aqui, é mais uma vez necessário, além de conhecer bem o banco que se está usando, também entender o que se está pedindo para o banco.
@@ -207,7 +216,14 @@ Nossa query é capaz de cruzar as linhas das duas tabelas e, aparentemente, o re
 Para se certificar dessa tese, vamos acrescentar a expressão “ORDER BY nomecand ASC” ao final da query. Esse complemento vai organizar os resultados usando a coluna “nomecand” como referência e em ordem ascendente. Dessa forma, vai ficar mais fácil ver as repetições de nomes de candidatos.
 
 ```sql
-SELECT candidatos.*, tb_eleicoes_10_dados.votos FROM tb_eleicoes_10_dados RIGHT JOIN candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id  WHERE candidatos.ano = '2010' and tb_eleicoes_10_dados.votos != 'NULL' ORDER BY nomecand ASC LIMIT 100
+SELECT candidatos.*, tb_eleicoes_10_dados.votos
+    FROM tb_eleicoes_10_dados
+    RIGHT JOIN
+      candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id  
+    WHERE
+      candidatos.ano = '2010'
+      and tb_eleicoes_10_dados.votos != 'NULL'
+    ORDER BY nomecand ASC LIMIT 100
 ```
 
 Para conseguirmos o número total de votos por candidato, vamos combinar novamente as ferramentas “GROUP BY” e “SUM”. Agrupando as linhas com o campo “can_id”, usamos o “SUM” para mostrar o total de votos.
@@ -217,7 +233,16 @@ Nesse caso, para termos uma leitura mais amigável dos resultados, vamos mudar o
 Ao final, vamos escrever um “ORDER BY” ascendente para verificarmos quais candidatos tiveram menos votos, o que pode ser jornalisticamente relevante.
 
 ```sql
-SELECT candidatos.*, SUM(tb_eleicoes_10_dados.votos) as votos_totais FROM tb_eleicoes_10_dados RIGHT JOIN candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id  WHERE candidatos.ano = '2010' and tb_eleicoes_10_dados.votos != 'NULL' GROUP BY can_id ORDER BY votos_totais ASC LIMIT 100
+SELECT candidatos.*, SUM(tb_eleicoes_10_dados.votos) as votos_totais
+    FROM tb_eleicoes_10_dados
+    RIGHT JOIN
+      candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id  
+    WHERE
+      candidatos.ano = '2010'
+      and tb_eleicoes_10_dados.votos != 'NULL'
+    GROUP BY can_id
+    ORDER BY votos_totais
+    ASC LIMIT 100
 ```
 
 Vemos que o candidato menos votado de 2010 teve apenas 5 votos. Vamos descobrir agora quem foi o politico eleito menos votado do ano no estado de São Paulo.
@@ -227,7 +252,20 @@ Para conseguirmos esse resultado, devemos incluir o campo “sitpos” da “tb_
 Com mais essa união, poderemos ler diretamente no resultado final a situação pós-eleitoral do candidato.
 
 ```sql
-SELECT candidatos.*, SUM(tb_eleicoes_10_dados.votos) as votos_totais, tb_formato_valor.fmt_desc FROM tb_eleicoes_10_dados RIGHT JOIN candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id LEFT JOIN tb_formato_valor ON tb_eleicoes_10_dados.sitpos = tb_formato_valor.fmt_val WHERE candidatos.ano = '2010' and tb_eleicoes_10_dados.votos != 'NULL' and tb_formato_valor.fmt_cod = '4006' and tb_formato_valor.fmt_val = '1' GROUP BY can_id ORDER BY votos_totais ASC LIMIT 100
+SELECT candidatos.*, SUM(tb_eleicoes_10_dados.votos) as votos_totais, tb_formato_valor.fmt_desc
+    FROM tb_eleicoes_10_dados
+    RIGHT JOIN
+      candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id
+      LEFT JOIN
+        tb_formato_valor ON tb_eleicoes_10_dados.sitpos = tb_formato_valor.fmt_val
+    WHERE
+      candidatos.ano = '2010'
+      and tb_eleicoes_10_dados.votos != 'NULL'
+      and tb_formato_valor.fmt_cod = '4006'
+      and tb_formato_valor.fmt_val = '1'
+    GROUP BY can_id
+    ORDER BY votos_totais
+    ASC LIMIT 100
 ```
 
 # Como exportar dados

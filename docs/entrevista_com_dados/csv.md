@@ -1,4 +1,4 @@
-# Dados separados por vírgulas
+# Dados separados por vírgulas (CSV)
 
 Os arquivos recebidos desse site vêm no padrão CSV (comma separated value), uma escolha comum para distribuir dados brutos pela internet. Tendo em vista essa preferência, vamos discutir um pouco de sua natureza e funcionamento.
 
