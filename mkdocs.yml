@@ -15,4 +15,4 @@ pages:
 - Resumo: resumo.md
 - Sobre: sobre.md
 
-theme: flatly
+theme: material
