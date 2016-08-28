@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Introdução - MySQL para Jornalistas</title>
+      
+      
+      
+        <link rel="canonical" href="http://laury.me/mysql-para-jornalistas/tutoriais/introducao/">
+      
+      
+        <meta name="author" content="Laury Bueno">
+      
+    
+    <meta property="og:url" content="http://laury.me/mysql-para-jornalistas/tutoriais/introducao/">
+    <meta property="og:title" content="MySQL para Jornalistas">
+    <meta property="og:image" content="http://laury.me/mysql-para-jornalistas/tutoriais/introducao//../../">
+    <meta name="apple-mobile-web-app-title" content="MySQL para Jornalistas">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal palette-accent-grey">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Tutoriais <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        Introdução
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/laurybueno" title="@laurybueno on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          MySQL para Jornalistas
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Por que isto importa?" href="../../por_que/isto_importa/">
+      Por que isto importa?
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Tutoriais</span>
+    <ul>
+      
+        
+  <li>
+    <a class="current" title="Introdução" href="./">
+      Introdução
+    </a>
+    
+      
+        
+      
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Ferramentas" href="../ferramentas/">
+      Ferramentas
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Um pouco sobre MySQL" href="../mysql/">
+      Um pouco sobre MySQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Entrevista com dados</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Baixe os dados que vamos usar" href="../../entrevista_com_dados/como_perguntar/">
+      Baixe os dados que vamos usar
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="CSV" href="../../entrevista_com_dados/csv/">
+      CSV
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="CSV para MySQL" href="../../entrevista_com_dados/csv-mysql/">
+      CSV para MySQL
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Como falar SQL" href="../../entrevista_com_dados/perguntas/">
+      Como falar SQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Resumo" href="../../resumo/">
+      Resumo
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Sobre" href="../../sobre/">
+      Sobre
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/laurybueno" target="_blank" title="@laurybueno on GitHub">
+                  @laurybueno on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="onde-estamos-pisando">Onde estamos pisando</h1>
+<p>Antes de tudo, vamos tentar entender o terreno espinhoso pelo qual estamos nos aventurando. Uma rápida visão geral pode ser útil para nos sentirmos menos perdidos no meio do caminho.</p>
+<p>Na internet, surgiu a relação conhecida como Cliente-Servidor. Nesse contexto, a palavra “servidor” denomina o computador, ou o programa, que fornece um serviço a um “cliente”, o qual pode, da mesma forma, ser um computador ou programa.</p>
+<p>Apesar de ser um conceito intrinsecamente ligado à conectividade da internet, a verdade é que esses dois elementos podem coexistir dentro de uma mesma máquina e dispensar completamente qualquer ligação com o mundo exterior. Essa é uma situação incomum no dia a dia de um usuário de computador, mas, dependendo da sua experiência com RAC, você pode tê-la vivido sem perceber.</p>
+<p>Ferramentas como o <a href="http://openrefine.org/">OpenRefine</a> (antigo Google Refine), usado para acelerar a busca por inconsistências em bancos de dados, podem ser utilizados pelo seu navegador (ex. Internet Explorer, Firefox, Chrome) e têm a aparência de um site comum da internet, mas não estão hospedados em um servidor distante. Na verdade, o Refine foi construído para ter seu código executado dentro do próprio computador de quem o usa. Dessa forma, quando você faz o “upload” de uma tabela para ele, na verdade está apenas passando as informações de um programa para outro dentro da sua máquina. Isso é bom, porque dispensa você de compartilhar o conteúdo, potencialmente sigiloso, com terceiros.</p>
+<p>MySQL é normalmente executado em computadores remotos, mas para desenvolvermos nosso trabalho com mais segurança e estabilidade, trabalharemos sempre dentro de nossos próprios computadores.</p>
+<h1 id="prepare-suas-ferramentas">Prepare suas ferramentas</h1>
+<p>O trabalho deste manual envolverá duas ferramentas livres e gratuitas, disponíveis para todos na internet: <a href="https://www.apachefriends.org/pt_br/download.html">Xampp</a> e <a href="http://www.heidisql.com/download.php">HeidiSQL</a>. Mesmo sendo de código aberto, o suporte de ambas ao português é pobre e, portanto, vamos nos ater a suas edições em inglês.</p>
+<p>Ambas são compatíveis com Windows, que é o foco deste manual. Usuários de Mac OS vão precisar usar o <a href="http://www.sequelpro.com/download/">Sequel Pro</a> como alternativa ao HeidiSQL. As interfaces são um pouco diferentes, mas o uso da linguagem SQL não difere em nada.</p>
+<p>Configurar um servidor MySQL pode envolver algumas etapas desnecessariamente complexas para o que queremos construir com nosso trabalho, e por isso vamos usar o pacote de servidores pré-configurado Xampp para nos pouparmos disso.</p>
+<p>Poderíamos lidar com nosso servidor de banco de dados apenas com comandos de texto, tanto para ver como para controlar nossas informações. No entanto, usaremos interfaces gráficas como HeidiSQL para eliminar gasto de tempo desnecessário para nossos objetivos e focarmos o aprendizado em relacionamentos mais complexos de tabelas.</p>
+<p>Baixe os aplicativos e instale-os. Vale observar que, mesmo sem ter permissões de administrador, situação comum em computadores de redações, é possível usar essas ferramentas sem qualquer prejuízo no Windows. Apenas procure pelas versões “portable” nas páginas de download.</p>
+          <aside class="copyright" role="note">
+            
+              Escrito por Laury Bueno e hospedado por GitHub &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../../por_que/isto_importa/" title="Por que isto importa?">
+          <span class="direction">
+            Anterior
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Por que isto importa?
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../ferramentas/" title="Ferramentas">
+          <span class="direction">
+            Próximo
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Ferramentas
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>

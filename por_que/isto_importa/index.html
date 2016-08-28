@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Por que isto importa? - MySQL para Jornalistas</title>
+      
+      
+      
+        <link rel="canonical" href="http://laury.me/mysql-para-jornalistas/por_que/isto_importa/">
+      
+      
+        <meta name="author" content="Laury Bueno">
+      
+    
+    <meta property="og:url" content="http://laury.me/mysql-para-jornalistas/por_que/isto_importa/">
+    <meta property="og:title" content="MySQL para Jornalistas">
+    <meta property="og:image" content="http://laury.me/mysql-para-jornalistas/por_que/isto_importa//../../">
+    <meta name="apple-mobile-web-app-title" content="MySQL para Jornalistas">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal palette-accent-grey">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Por que isto importa?
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/laurybueno" title="@laurybueno on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          MySQL para Jornalistas
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Por que isto importa?" href="./">
+      Por que isto importa?
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Um pouco de historia" href="#um-pouco-de-historia">
+                Um pouco de historia
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Como estamos no Brasil" href="#como-estamos-no-brasil">
+                Como estamos no Brasil
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Com quem estamos lidando?" href="#com-quem-estamos-lidando">
+                Com quem estamos lidando?
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Tutoriais</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introdução" href="../../tutoriais/introducao/">
+      Introdução
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Ferramentas" href="../../tutoriais/ferramentas/">
+      Ferramentas
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Um pouco sobre MySQL" href="../../tutoriais/mysql/">
+      Um pouco sobre MySQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Entrevista com dados</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Baixe os dados que vamos usar" href="../../entrevista_com_dados/como_perguntar/">
+      Baixe os dados que vamos usar
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="CSV" href="../../entrevista_com_dados/csv/">
+      CSV
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="CSV para MySQL" href="../../entrevista_com_dados/csv-mysql/">
+      CSV para MySQL
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Como falar SQL" href="../../entrevista_com_dados/perguntas/">
+      Como falar SQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Resumo" href="../../resumo/">
+      Resumo
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Sobre" href="../../sobre/">
+      Sobre
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/laurybueno" target="_blank" title="@laurybueno on GitHub">
+                  @laurybueno on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="por-que-isto-importa">Por que isto importa?</h1>
+<h2 id="um-pouco-de-historia">Um pouco de historia</h2>
+<p>A origem da Reportagem com Auxílio do Computador (RAC) não é um consenso e, em geral, depende do quão ampla é a definição que se dá ao tema. Philip Meyer, professor e pesquisador do “jornalismo de precisão” desde 1981, foi pioneiro ao usar dados digitais de uma pesquisa em Detroit, nos EUA, em 1967. Ele provou com números que os protestos violentos daquele ano não envolveram apenas pessoas com escolaridade baixa, ao contrário do que estava se tornando senso comum na época, e publicou a história no Detroit Free Press.</p>
+<p>Em 1968, Clarence Jones, do jornal norte-americano Miami Herald, conseguiu comprovar um esquema de favorecimento no sistema judicial em sua cidade, na Florida, sistematizando dados sobre as decisões em um computador e estudando seus padrões.</p>
+<p>Desde então, o jornalismo baseado em grandes bancos de dados se multiplicou.</p>
+<p>Em 2010, o Financial Times e o Bureau of Investigative Journalism (BIJ) trabalharam juntos para destrinchar investimentos da divisão de fundos estruturais da União Europeia e analisar as identidades de seus beneficiários. O resultado foi cinco dias de cobertura no jornal, um rádio-documentário na BBC e vários documentários de televisão, conforme explica Cynthia O’Murchu, repórter do Financial Times, no livro “Data Journalism Handbook”, que está <a href="http://datajournalismhandbook.org/1.0/en/case_studies_1.html">disponível online</a>.</p>
+<h2 id="como-estamos-no-brasil">Como estamos no Brasil</h2>
+<p>A Abraji, Associação Brasileira de Jornalismo Investigativo, é quem apoia e incentiva a adoção da Reportagem com Auxílio do Computador no Brasil. Para Guilherme Alpendre, seu gerente-executivo, “com técnicas de RAC é possível fazer um levantamento sobre os bens de um político e mesmo encontrar seus sócios em empresas privadas, é possível indicar o proprietário de um domínio de internet ou mesmo cruzar dados sobre financiamento eleitoral e contratações posteriores com o poder público.”</p>
+<p>No ProPublica, redação sem fins lucrativos de jornalismo investigativo sediada em Nova York, MySQL, PostgreSQL e SQL Server são aplicativos da área de tecnologia da informação frequentemente usados tanto para armazenar quanto para cruzar dados, <a href="http://datajournalismhandbook.org/1.0/en/understanding_data_6.html">segundo Scott Klein</a>.</p>
+<p>E essas são duas tarefas fundamentais para o jornalista que se aventura na área: armazenar e cruzar. Quando lidamos com bancos de dados muito grandes, como tabelas que ultrapassam 600 mil linhas, manusear a informação pode se tornar uma tarefa impossível com um software inadequado.
+É assim que surge a necessidade de aprendermos tecnologias antes estrangeiras às redações. Precisamos nos tornar um pouco programadores para usarmos seu domínio sobre o computador a favor de nosso faro para notícias e, portanto, a favor dos leitores.</p>
+<p>Apesar de ser um lugar comum, não há expressão melhor para este momento: “é mais fácil do que parece”.</p>
+<h2 id="com-quem-estamos-lidando">Com quem estamos lidando?</h2>
+<p>MySQL é definido como um sistema de gerenciamento de bancos de dados relacional. Seus usos vão desde guardar simples informações de cadastramentos em pequenas empresas até gerenciar os milhões de artigos de sites como a Wikipédia.</p>
+<p>Ele é dito “relacional” porque tem ferramentas que permitem cruzar, comparar e fundir informações de tabelas separadas em tabelas novas.</p>
+<p>Suas vantagens vão além da solidez e com ajuda da linguagem SQL, usada tanto pelo MySQL quanto por outros sistemas, o usuário pode se expressar com mais liberdade para seus dados do que poderia, por exemplo, com o Excel. </p>
+<p>Essa é a palavra chave: liberdade. Quando você entrevista números, precisa se sentir tão à vontade quanto se estivesse entrevistando pessoas. O domínio do português e o conhecimento do tema são essenciais em entrevistas tradicionais, e nessa nova interação com a informação, em vez de falar português, você vai falar SQL.</p>
+<p>Para se tornar um verdadeiro "resolvedor" de problemas na hora de apurar dados estruturados de bancos públicos, é necessário não ter medo de fazer perguntas para quem entende mais do que você, insistir mesmo quando o começo parece difícil e, principalmente, sujar as mãos. É preciso mudar a mentalidade de "não sei fazer isso" para "ainda não sei fazer isso". </p>
+          <aside class="copyright" role="note">
+            
+              Escrito por Laury Bueno e hospedado por GitHub &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../.." title="Home">
+          <span class="direction">
+            Anterior
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Home
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../../tutoriais/introducao/" title="Introdução">
+          <span class="direction">
+            Próximo
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Introdução
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>

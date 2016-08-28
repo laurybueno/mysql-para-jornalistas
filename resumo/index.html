@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Resumo - MySQL para Jornalistas</title>
+      
+      
+      
+        <link rel="canonical" href="http://laury.me/mysql-para-jornalistas/resumo/">
+      
+      
+        <meta name="author" content="Laury Bueno">
+      
+    
+    <meta property="og:url" content="http://laury.me/mysql-para-jornalistas/resumo/">
+    <meta property="og:title" content="MySQL para Jornalistas">
+    <meta property="og:image" content="http://laury.me/mysql-para-jornalistas/resumo//../">
+    <meta name="apple-mobile-web-app-title" content="MySQL para Jornalistas">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal palette-accent-grey">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Resumo
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/laurybueno" title="@laurybueno on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          MySQL para Jornalistas
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Por que isto importa?" href="../por_que/isto_importa/">
+      Por que isto importa?
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Tutoriais</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introdução" href="../tutoriais/introducao/">
+      Introdução
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Ferramentas" href="../tutoriais/ferramentas/">
+      Ferramentas
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Um pouco sobre MySQL" href="../tutoriais/mysql/">
+      Um pouco sobre MySQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Entrevista com dados</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Baixe os dados que vamos usar" href="../entrevista_com_dados/como_perguntar/">
+      Baixe os dados que vamos usar
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="CSV" href="../entrevista_com_dados/csv/">
+      CSV
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="CSV para MySQL" href="../entrevista_com_dados/csv-mysql/">
+      CSV para MySQL
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Como falar SQL" href="../entrevista_com_dados/perguntas/">
+      Como falar SQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Resumo" href="./">
+      Resumo
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="WHERE" href="#where">
+                WHERE
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="LIKE" href="#like">
+                LIKE
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="!=" href="#_1">
+                !=
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="GROUP BY" href="#group-by">
+                GROUP BY
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="SUM" href="#sum">
+                SUM
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="COUNT" href="#count">
+                COUNT
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="LIMIT" href="#limit">
+                LIMIT
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="RIGHT JOIN / LEFT JOIN" href="#right-join-left-join">
+                RIGHT JOIN / LEFT JOIN
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Sobre" href="../sobre/">
+      Sobre
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/laurybueno" target="_blank" title="@laurybueno on GitHub">
+                  @laurybueno on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="guia-rapido-de-sql-orientado-a-investigacao-de-dados">Guia rápido de SQL orientado à investigação de dados</h1>
+<p>Apenas para fins de consulta, aqui você tem reunidas as principais ferramentas da linguagem SQL apresentadas neste manual:</p>
+<h2 id="where">WHERE</h2>
+<p>Define filtros para seus resultados</p>
+<pre><code class="sql">SELECT votos, can_id
+  FROM tb_eleicoes_10_dados
+  WHERE
+    can_id = 0
+</code></pre>
+
+<h2 id="like">LIKE</h2>
+<p>Permite comparar valores incompletos como partes de números ou palavras</p>
+<pre><code class="sql">SELECT *
+  FROM tb_formato_valor
+  WHERE
+    fmt_cod LIKE '%40%'
+</code></pre>
+
+<h2 id="_1">!=</h2>
+<p>Significa “diferente”</p>
+<pre><code class="sql">SELECT votos, can_id, tipo, tipo2
+  FROM tb_eleicoes_10_dados
+  WHERE
+    tipo != tipo2
+</code></pre>
+
+<h2 id="group-by">GROUP BY</h2>
+<p>Agrupa os resultados de acordo com um campo escolhido. Pode ser combinado com as funções SUM e COUNT</p>
+<pre><code class="sql">SELECT ano, inst, COUNT(inst)
+  FROM candidatos
+  WHERE
+    (ano = '2010'
+      and turno = '1')
+  GROUP BY inst
+</code></pre>
+
+<h2 id="sum">SUM</h2>
+<p>Soma os valores de um campo em todas as linhas selecionadas. É frequentemente usado com GROUP BY</p>
+<pre><code class="sql">SELECT SUM(votos), cargo
+  FROM tb_eleicoes_10_dados
+  WHERE
+    (tipo = '4'
+      or tipo = '3')
+    and turno = '1'
+  GROUP BY cargo
+</code></pre>
+
+<h2 id="count">COUNT</h2>
+<p>Conta o número de vezes em que determinado campo aparece nos dados resultantes da query, independentemente dos valores contidos. Assim como o SUM, ele ganha eficácia com GROUP BY</p>
+<pre><code class="sql">SELECT ano, inst, COUNT(inst)
+  FROM candidatos
+  WHERE
+    (ano = '2010'
+      and turno = '1')
+    GROUP BY inst
+</code></pre>
+
+<h2 id="limit">LIMIT</h2>
+<p>Limita o número de linhas que pode ser retornado por uma query. Serve para evitar sobrecarga em casos de querys com muitos resultados ou muito complexas, como JOIN</p>
+<pre><code class="sql">SELECT *
+  FROM candidatos
+  WHERE
+    ano = '2010'
+    and turno = '1'
+  LIMIT 100
+</code></pre>
+
+<h2 id="right-join-left-join">RIGHT JOIN / LEFT JOIN</h2>
+<p>Emenda tabelas baseado em uma condição determinada após a expressão ON. Pode ser repetido dentro de uma mesma query para unir mais de duas tabelas</p>
+<pre><code class="sql">SELECT candidatos.*, tb_eleicoes_10_dados.votos
+  FROM tb_eleicoes_10_dados
+  RIGHT JOIN
+    candidatos ON candidatos.can_id = tb_eleicoes_10_dados.can_id  
+  WHERE
+    candidatos.ano = '2010'
+    and tb_eleicoes_10_dados.votos != 'NULL'
+  LIMIT 100
+</code></pre>
+          <aside class="copyright" role="note">
+            
+              Escrito por Laury Bueno e hospedado por GitHub &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../entrevista_com_dados/perguntas/" title="Como falar SQL">
+          <span class="direction">
+            Anterior
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Como falar SQL
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../sobre/" title="Sobre">
+          <span class="direction">
+            Próximo
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Sobre
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = '';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>

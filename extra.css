@@ -1,0 +1,16 @@
+.article h1 {
+    padding: 42px 0 0px;
+}
+
+.article h1:nth-of-type(1){
+  padding: 0;
+}
+
+.copyright {
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+
+a.project {
+  height: 60px;
+}

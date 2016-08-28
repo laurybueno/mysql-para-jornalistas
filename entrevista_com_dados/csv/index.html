@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>CSV - MySQL para Jornalistas</title>
+      
+      
+      
+        <link rel="canonical" href="http://laury.me/mysql-para-jornalistas/entrevista_com_dados/csv/">
+      
+      
+        <meta name="author" content="Laury Bueno">
+      
+    
+    <meta property="og:url" content="http://laury.me/mysql-para-jornalistas/entrevista_com_dados/csv/">
+    <meta property="og:title" content="MySQL para Jornalistas">
+    <meta property="og:image" content="http://laury.me/mysql-para-jornalistas/entrevista_com_dados/csv//../../">
+    <meta name="apple-mobile-web-app-title" content="MySQL para Jornalistas">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal palette-accent-grey">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                Entrevista com dados <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        CSV
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/laurybueno" title="@laurybueno on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          MySQL para Jornalistas
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="../..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Por que isto importa?" href="../../por_que/isto_importa/">
+      Por que isto importa?
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Tutoriais</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Introdução" href="../../tutoriais/introducao/">
+      Introdução
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Ferramentas" href="../../tutoriais/ferramentas/">
+      Ferramentas
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Um pouco sobre MySQL" href="../../tutoriais/mysql/">
+      Um pouco sobre MySQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <span class="section">Entrevista com dados</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="Baixe os dados que vamos usar" href="../como_perguntar/">
+      Baixe os dados que vamos usar
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="CSV" href="./">
+      CSV
+    </a>
+    
+      
+        
+      
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="CSV para MySQL" href="../csv-mysql/">
+      CSV para MySQL
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="Como falar SQL" href="../perguntas/">
+      Como falar SQL
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Resumo" href="../../resumo/">
+      Resumo
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Sobre" href="../../sobre/">
+      Sobre
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/laurybueno" target="_blank" title="@laurybueno on GitHub">
+                  @laurybueno on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="dados-separados-por-virgulas-csv">Dados separados por vírgulas (CSV)</h1>
+<p>Os arquivos recebidos desse site vêm no padrão CSV (comma separated value), uma escolha comum para distribuir dados brutos pela internet. Tendo em vista essa preferência, vamos discutir um pouco de sua natureza e funcionamento.</p>
+<p>É sempre bom observar que, apesar de os arquivos recebidos estarem formatados em CSV, eles não têm a terminação “.csv” tradicional para dados assim. Essa é uma característica que dificulta a identificação, mas não impede a interpretação por softwares.</p>
+<p>Arquivos CSV são, em termos simples, uma forma de construir tabelas apenas com texto sem formatação. Para conseguir esse efeito, cada arquivo impõe que o caractere “,” será o separador das células da tabela.</p>
+<p>Veja o exemplo de uma tabela hipotética sobre buracos nas ruas de uma cidade:</p>
+<pre><code class="plain">id,data,endereço,urgencia
+1258,12/11/2010,Rua General Alberto Calado 158,7
+1259,12/11/2010,Rua Rodrigues Alves 95,5
+</code></pre>
+
+<p>A primeira linha diz quais são os nomes das colunas presentes nessa tabela. A primeira coluna é “id”, a segunda “data”, a terceira “endereco” e a última “urgencia”. Repare que não há acentos nem espaços nas vírgulas. Isso não é uma regra geral para esse tipo de arquivo, mas é frequente.</p>
+<p>A segunda linha do arquivo faz o papel de primeira linha de dados da tabela e segue o mesmo padrão da formatação de colunas. Olhando para essas linhas, podemos perceber que o buraco com “id” igual a “1259” fica na rua “Rua Rodrigues Alves 95”.</p>
+<p>Ou seja, os dados apresentados equivalem à seguinte tabela:</p>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>data</th>
+<th>endereço</th>
+<th>urgencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1258</td>
+<td>12/11/2010</td>
+<td>Rua General Alberto Calado 158</td>
+<td>7</td>
+</tr>
+<tr>
+<td>1259</td>
+<td>12/11/2010</td>
+<td>Rua Rodrigues Alves 95</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Apesar de levar vírgula (“comma”) no nome, esse tipo de arquivo nem sempre tem suas separações determinadas por vírgulas. Outros caracteres, como o ponto-e-vírgula, podem desempenhar esse papel caso seja conveniente. Justamente o exemplo posto poderia se beneficiar dessa troca, já que é comum endereços terem vírgulas para separar o nome da rua do número da residência. No caso, deixamos apenas o espaço em branco para não gerar confusão na contagem de colunas e misturar os dados, mas definir ponto-e-vírgula como o separador teria sido a solução ideal.</p>
+<p>Como há variações de padrão desse tipo, nem sempre um processador de planilhas como o Microsoft Excel será capaz de abrir um arquivo CSV com a separação de colunas correta. Para ter maior flexibilidade, prefira o <a href="https://pt-br.libreoffice.org/baixe-ja/libreoffice-stable/">LibreOffice Calc</a>, um software livre e disponível gratuitamente na internet. O arquivo que baixamos no portal Governo Aberto, por exemplo, não será corretamente aberto pelo Excel, mas pode ser pelo Calc.</p>
+<p><img alt="Screeshot" src="../../img/libreoffice-calc-csv.png" /></p>
+<p>Em “Opções de separadores”, selecione “ponto-e-vírgula”. Abaixo, você já pode ver se a tabela será exibida corretamente com as opções selecionadas. Com outros arquivos encontrados na internet, você pode ter que mexer em mais opções para conseguir ver corretamente a informação.</p>
+<p>Pode ser preciso dar atenção também à função “Conjunto de caracteres”, também conhecida como “Encoding”. Essa característica se refere à forma como caracteres com acentos são salvos no arquivo. No caso anterior, não foi necessário nos preocuparmos com isso, pois só havia números na tabela, mas os próximos arquivos que formos importar terão também textos, de forma que precisaremos descobrir com qual “encoding” foram criados.</p>
+<p>Vamos pegar como exemplo o arquivo “tb_eleicoes_00_variavel.txt”. Tente abri-lo no Calc. Assim como no arquivo anterior, você pode ver uma tela de preview, que procura mostrar como o arquivo ficará se for aberto com as configurações selecionadas. Desta vez, além de prestar atenção na tabulação, procure por palavras que tenham acentos ou letras especiais como “ç”. Se essas palavras estiverem sendo mostradas corretamente, não há com o que se preocupar, mas se não estiverem, é preciso tentar outras opções em “encoding”.</p>
+<p>As opções mais frequentes são UTF-8 e ISO-8859-1 (que neste caso é o correto). Você também vai notar que outros encodings também podem abrir corretamente esse arquivo. Isso acontece porque a forma como eles interpretam caracteres têm muitos pontos em comum uns com os outros. Apenas fique atento a acentos e cedilhas e escolha a codificação que melhor se adaptar ao texto que está tentando visualizar.</p>
+          <aside class="copyright" role="note">
+            
+              Escrito por Laury Bueno e hospedado por GitHub &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../como_perguntar/" title="Baixe os dados que vamos usar">
+          <span class="direction">
+            Anterior
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Baixe os dados que vamos usar
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../csv-mysql/" title="CSV para MySQL">
+          <span class="direction">
+            Próximo
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                CSV para MySQL
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>
