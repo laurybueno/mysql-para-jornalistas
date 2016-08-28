@@ -24,7 +24,7 @@ Volte ao painel de controle do Xampp e escolha “Stop” tanto para Apache quan
 
 Esse software é apenas uma das muitas possibilidades de interfaces gráficas para MySQL. Você pode usar a que lhe convier. Escolhemos o [HeidiSQL](http://www.heidisql.com/download.php) para este manual por lidar mais rapidamente com grandes carregamentos de dados; situação essa que deveremos enfrentar diversas vezes com informações brutas fornecidas por governos. Mais adiante, teremos que cruzar uma tabela de quase 600 mil linhas com outras não muito menores. Essa quantidade de dados representa grande esforço não só para o próprio MySQL, como também para a interface gráfica que escolhemos.
 
-Outra ferramenta também bastante robusta é o phpMyAdmin, que faz parte do pacote Xampp e pode ser encontrado aqui [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/) (enquanto você estiver com o servidor ligado, é claro). Lembre-se apenas que, para usá-lo, são necessários tanto o servidor MySQL quanto o Apache rodando em seu computador. Se não está claro para você como fazer isso, [leia este guia sobre Xampp](xampp.md).
+Outra ferramenta também bastante robusta é o phpMyAdmin, que faz parte do pacote Xampp e pode ser encontrado aqui [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/) (enquanto você estiver com o servidor ligado, é claro). Lembre-se apenas que, para usá-lo, são necessários tanto o servidor MySQL quanto o Apache rodando em seu computador. Se não está claro para você como fazer isso, [leia este guia sobre Xampp](#xampp-um-servidor-mysql-pratico).
 
 ![Screeshot](../img/heidisql-inicio.png)
 

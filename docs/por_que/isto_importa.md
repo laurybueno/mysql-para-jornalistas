@@ -6,7 +6,9 @@ A origem da Reportagem com Auxílio do Computador (RAC) não é um consenso e, e
 
 Em 1968, Clarence Jones, do jornal norte-americano Miami Herald, conseguiu comprovar um esquema de favorecimento no sistema judicial em sua cidade, na Florida, sistematizando dados sobre as decisões em um computador e estudando seus padrões.
 
-Desnecessário dizer que, desde então, exemplos de jornalismo baseado em grandes bancos de dados só se multiplicaram. Em 2010, o Financial Times e o Bureau of Investigative Journalism (BIJ) trabalharam juntos para destrinchar investimentos da divisão de fundos estruturais da União Europeia e analisar as identidades de seus beneficiários. O resultado foi cinco dias de cobertura no jornal, um rádio-documentário na BBC e vários documentários de televisão, conforme explica Cynthia O’Murchu, repórter do Financial Times, no livro “Data Journalism Handbook”, que está [disponível online](http://datajournalismhandbook.org/1.0/en/case_studies_1.html).
+Desde então, o jornalismo baseado em grandes bancos de dados se multiplicou.
+
+Em 2010, o Financial Times e o Bureau of Investigative Journalism (BIJ) trabalharam juntos para destrinchar investimentos da divisão de fundos estruturais da União Europeia e analisar as identidades de seus beneficiários. O resultado foi cinco dias de cobertura no jornal, um rádio-documentário na BBC e vários documentários de televisão, conforme explica Cynthia O’Murchu, repórter do Financial Times, no livro “Data Journalism Handbook”, que está [disponível online](http://datajournalismhandbook.org/1.0/en/case_studies_1.html).
 
 
 ## Como estamos no Brasil
