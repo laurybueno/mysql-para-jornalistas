@@ -5,6 +5,7 @@ site_url: 'http://laury.me/mysql-para-jornalistas'
 
 # Repository
 repo_name: 'mysql-para-jornalistas'
+repo_url: 'http://laury.me/mysql-para-jornalistas/'
 
 # Copyright
 copyright: 'Escrito por Laury Bueno e hospedado por GitHub'
