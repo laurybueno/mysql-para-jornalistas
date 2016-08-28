@@ -1,4 +1,4 @@
-# Guia rápido de SQL orientado a investigação de dados
+# Guia rápido de SQL orientado à investigação de dados
 
 Apenas para fins de consulta, aqui você tem reunidas as principais ferramentas da linguagem SQL apresentadas neste manual:
 
