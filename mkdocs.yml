@@ -1,8 +1,18 @@
 site_name: MySQL para Jornalistas
+site_description: 'De um jornalista, para outros jornalistas, este manual foi feito com a esperança de ser útil na busca da verdade em meio à informação'
+site_author: 'Laury Bueno'
+site_url: 'http://laury.me/mysql-para-jornalistas'
+
+# Repository
+repo_name: 'mysql-para-jornalistas'
+
+# Copyright
+copyright: 'Escrito por Laury Bueno e hospedado por GitHub'
+
 
 pages:
 - Home: index.md
-- Por quê isto importa?: por_que/isto_importa.md
+- Por que isto importa?: por_que/isto_importa.md
 - Tutoriais:
   - Introdução: tutoriais/introducao.md
   - Ferramentas: tutoriais/ferramentas.md
@@ -21,3 +31,14 @@ extra:
   palette:
     primary: 'teal'
     accent: 'grey'
+
+  i18n:
+    prev: 'Anterior'
+    next: 'Próximo'
+
+  author:
+    github: 'laurybueno'
+
+  google_analytics:
+    - 'UA-83279816-1'
+    - 'auto'
