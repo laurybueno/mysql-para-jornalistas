@@ -10,7 +10,7 @@ Para lidar com essas situações, exitem alternativas avançadas e acessíveis p
 
 Neste manual, vamos entender como funciona e como podemos usar o [MySQL](https://www.mysql.com/) para processar, analisar e cruzar grandes quantidades de dados enquanto tentamos escrever uma matéria investigativa.
 
-![Screenshot](../img/heidisql-tabela-eleicoes.png)
+![Screenshot](img/heidisql-tabela-eleicoes.png)
 *Parece meio assustador, mas nós vamos chegar lá com um pouco de perseverança.*
 
 # Por onde começar?
