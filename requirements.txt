@@ -11,6 +11,7 @@ livereload==2.4.1
 mkdocs==0.15.3
 mkdocs-bootstrap==0.1.1
 mkdocs-bootswatch==0.4.0
+mkdocs-material==0.2.4
 singledispatch==3.4.0.3
 six==1.10.0
 tornado==4.4.1
