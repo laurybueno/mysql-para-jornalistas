@@ -196,7 +196,7 @@ Como estamos fazendo cruzamentos com tabelas muito grandes, é uma boa ideia lim
 
 Veja como fica a query completa. Seja paciente, pois dependendo da máquina em que você estiver trabalhando, o resultado pode demorar mais de um minuto para ser processado pelo banco. Lembre-se que estamos pedindo para nosso servidor que compare duas tabelas muito grandes. Se você ainda não escolheu os índices das tabelas, agora isso vai fazer diferença no desempenho da ferramenta.
 
-*Daqui em diante, as SQLs serão exibidas com identações. Esse é apenas um recurso estpetico para facilitar a leitura dos comandos e não tem qualquer influência sobre os resultados obtidos do banco.*
+*Daqui em diante, as SQLs serão exibidas com indentações. Esse é apenas um recurso estético para facilitar a leitura dos comandos e não tem qualquer influência sobre os resultados obtidos do banco.*
 
 ```sql
 SELECT candidatos.*, tb_eleicoes_10_dados.votos
