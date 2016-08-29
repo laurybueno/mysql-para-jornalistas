@@ -423,7 +423,7 @@
 <p>A cláusula “WHERE” está aí para nos assegurarmos de que só linhas de 2010 serão pegas da tabela de candidatos.</p>
 <p>Como estamos fazendo cruzamentos com tabelas muito grandes, é uma boa ideia limitar os resultados enquanto não precisarmos da tabela completa (que certamente teria centenas de milhares de linhas). A cláusula “LIMIT” entra em ação depois que o servidor já processou a resposta que vai dar à sua query e determina quantas linhas devem ser exibidas no total.</p>
 <p>Veja como fica a query completa. Seja paciente, pois dependendo da máquina em que você estiver trabalhando, o resultado pode demorar mais de um minuto para ser processado pelo banco. Lembre-se que estamos pedindo para nosso servidor que compare duas tabelas muito grandes. Se você ainda não escolheu os índices das tabelas, agora isso vai fazer diferença no desempenho da ferramenta.</p>
-<p><em>Daqui em diante, as SQLs serão exibidas com identações. Esse é apenas um recurso estpetico para facilitar a leitura dos comandos e não tem qualquer influência sobre os resultados obtidos do banco.</em></p>
+<p><em>Daqui em diante, as SQLs serão exibidas com indentações. Esse é apenas um recurso estético para facilitar a leitura dos comandos e não tem qualquer influência sobre os resultados obtidos do banco.</em></p>
 <pre><code class="sql">SELECT candidatos.*, tb_eleicoes_10_dados.votos
     FROM tb_eleicoes_10_dados
     RIGHT JOIN
